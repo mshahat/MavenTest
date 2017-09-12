@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_oVtREJbbEeet55i38C2eTw" targetNamespace="http://tns.tibco.com/bw/composite/ChrisDockerRestTemplate" name="ChrisDockerRestTemplate" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_uAHPIpbbEeet55i38C2eTw" name="name" promote="ComponentProcess/name">
+    <sca:interface.wsdl xmi:id="_uAHPJpbbEeet55i38C2eTw" interface="http://xmlns.example.com/20170911122610PLT#wsdl.interface(name)" scaext:wsdlLocation="../Processes/chrisdockerresttemplate/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_uAH2MJbbEeet55i38C2eTw" name="RestService" path="/name" docBasePath="http://localhost:7777/ChrisDockerRestTemplate" docResourcePath="Name" basePath="/" connector="chrisdockerresttemplate.Name" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/chrisdockerresttemplate.Process-Name.json">
+      <operation xmi:id="_uAH2MZbbEeet55i38C2eTw" operationName="post" nickname="post-name" httpMethod="POST" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_uATcYJbbEeet55i38C2eTw"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_uAH2MpbbEeet55i38C2eTw" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_obbekJbbEeet55i38C2eTw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_obd60JbbEeet55i38C2eTw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_obfI8JbbEeet55i38C2eTw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_obgXEJbbEeet55i38C2eTw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_obg-IJbbEeet55i38C2eTw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_obiMQJbbEeet55i38C2eTw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_objaYJbbEeet55i38C2eTw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_oX9T0JbbEeet55i38C2eTw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oX9T0ZbbEeet55i38C2eTw" processName="chrisdockerresttemplate.Process"/>
+    <sca:service xmi:id="_uAHPIJbbEeet55i38C2eTw" name="name">
+      <sca:interface.wsdl xmi:id="_uAHPIZbbEeet55i38C2eTw" interface="http://xmlns.example.com/20170911122610PLT#wsdl.interface(name)" scaext:wsdlLocation="../Processes/chrisdockerresttemplate/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

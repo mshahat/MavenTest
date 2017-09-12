@@ -1,0 +1,12 @@
+Manifest-Version: 1.0.0.qualifier
+TIBCO-BW-Application: META-INF/TIBCO.xml
+Bundle-SymbolicName: ChrisDockerRestTemplate.application
+Bundle-Name: ChrisDockerRestTemplate Application
+Bundle-Version: 1.0.0.qualifier
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BWCE-Edition-Target: docker
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.3.1 V22 2017-08-17
+
