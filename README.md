@@ -1,0 +1,2 @@
+# MavenTest
+BWCEMaven Test example
