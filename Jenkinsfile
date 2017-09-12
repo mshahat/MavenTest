@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '''cd BWCEMavenTest/ChrisDockerRestTemplate.application.parent
 mvn clean'''
+        sh 'mvn --version'
       }
     }
   }
