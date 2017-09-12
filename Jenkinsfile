@@ -6,5 +6,10 @@ pipeline {
         sh 'echo "mvn"'
       }
     }
+    stage('maven-clean') {
+      steps {
+        build 'mvn --version'
+      }
+    }
   }
 }
