@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''cd BWCEMavenTest/ChrisDockerRestTemplate.application.parent
-mvn clean'''
+        sh 'mvn --version'
         sh 'mvn --version'
       }
     }
